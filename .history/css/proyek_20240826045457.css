@@ -1,0 +1,138 @@
+/* Container Umum untuk Proyek */
+.projects-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Header Proyek */
+.projects-header {
+    background-color: #ffc107;
+    color: #1c1c1c;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+/* Daftar Proyek */
+.projects-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Item Proyek */
+.projects-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* Ikon Proyek */
+.project-icon {
+    font-size: 24px;
+    color: #ff9800;
+    margin-right: 15px;
+}
+
+/* Detail Proyek */
+.project-details {
+    flex-grow: 1;
+    border-left: 2px solid #1c1c1c;
+    padding-left: 10px;
+}
+
+/* Judul Proyek */
+.project-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #1c1c1c;
+}
+
+/* Deskripsi Proyek */
+.project-description {
+    color: #666;
+}
+
+/* Highlighted Text */
+.highlighted {
+    color: #ff9800;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Responsif untuk mode Android (max-width: 767px) */
+@media (max-width: 767px) {
+    .projects-container {
+        padding: 16px; 
+    }
+
+    .projects-header {
+        font-size: 1.25rem; 
+        padding: 10px 16px; 
+    }
+
+    .projects-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 0; 
+    }
+
+    .project-icon {
+        font-size: 20px; 
+        margin-right: 0; 
+        margin-bottom: 8px; /* Menambahkan margin bawah */
+    }
+
+    .project-details {
+        border-left: none; /* Menghapus border kiri */
+        padding-left: 0; /* Menghapus padding kiri */
+    }
+
+    .project-title {
+        font-size: 1.1rem; /* Menyesuaikan ukuran font judul proyek */
+    }
+
+    .highlighted {
+        font-size: 0.9rem; /* Menyesuaikan ukuran font teks yang disorot */
+    }
+}
+
+/* Responsif untuk mode tablet (min-width: 768px) dan (max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .projects-container {
+        padding: 18px; /* Menyesuaikan padding untuk layar tablet */
+    }
+
+    .projects-header {
+        font-size: 1.4rem; /* Menyesuaikan ukuran font header */
+        padding: 11px 18px; /* Menyesuaikan padding header */
+    }
+
+    .projects-item {
+        padding: 9px 0; /* Menyesuaikan padding item proyek */
+    }
+
+    .project-icon {
+        font-size: 22px; /* Menyesuaikan ukuran ikon proyek */
+        margin-right: 10px; /* Menyesuaikan margin kanan */
+    }
+
+    .project-title {
+        font-size: 1.15rem; /* Menyesuaikan ukuran font judul proyek */
+    }
+
+    .highlighted {
+        font-size: 0.95rem; /* Menyesuaikan ukuran font teks yang disorot */
+    }
+}

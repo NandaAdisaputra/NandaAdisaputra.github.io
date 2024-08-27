@@ -1,0 +1,59 @@
+/* Navbar container */
+.mdc-navbar {
+    display: flex;
+    padding: 16px;
+    max-width: 900px;
+    margin-right: 16px;
+}
+
+/* Navbar links */
+.mdc-navbar a {
+    color: #00796b;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    padding: 12px 24px;
+    font-size: 12px;
+    flex: 1;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Navbar link hover state */
+.mdc-navbar a:hover {
+    background-color: #e0f2f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Media Queries */
+
+/* Tablet and Mobile Landscape */
+@media (max-width: 768px) {
+    .mdc-navbar {
+        padding: 12px;
+        flex-wrap: wrap; 
+        justify-content: center; /* Center links */
+    }
+
+    .mdc-navbar a {
+        font-size: 14px; /* Adjust font size */
+        padding: 10px 20px; /* Adjust padding */
+        margin: 5px; /* Adjust margin */
+    }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+    .mdc-navbar {
+        padding: 10px;
+        flex-direction: column; /* Stack links vertically */
+    }
+
+    .mdc-navbar a {
+        font-size: 16px; /* Increase font size for readability */
+        padding: 10px 20px; /* Adjust padding */
+        margin: 5px 0; /* Margin for vertical spacing */
+    }
+}

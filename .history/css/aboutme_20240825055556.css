@@ -1,0 +1,55 @@
+#about-me {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+.about-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-text {
+    flex: 2;
+}
+
+.section-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f7c048;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-info-card {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-picture {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.personal-info h1,
+.personal-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.personal-info p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}

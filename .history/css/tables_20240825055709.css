@@ -1,0 +1,23 @@
+.mdc-data-table__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.mdc-data-table__header-cell {
+    font-weight: bold;
+    padding: 16px;
+    text-align: left;
+    background-color: #00796b;
+    color: #ffffff;
+    border-radius: 4px 4px 0 0;
+}
+
+.mdc-data-table__cell {
+    padding: 16px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #333;
+}
+
+.mdc-data-table__cell:hover {
+    background-color: #e0f2f1;
+}

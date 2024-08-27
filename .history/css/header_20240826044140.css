@@ -1,0 +1,23 @@
+header.mdc-elevation--z8 {
+    background-color: #ff9800;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+/* Responsif untuk mode Android (max-width: 767px) */
+@media (max-width: 767px) {
+    header.mdc-elevation--z8 {
+        padding: 15px; 
+        font-size: 14px; 
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Mengurangi sedikit bayangan untuk tampilan yang lebih ringan */
+    }
+}
+
+/* Responsif untuk mode tablet (min-width: 768px) dan (max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    header.mdc-elevation--z8 {
+        padding: 18px; /* Menyesuaikan padding untuk layar tablet */
+        font-size: 16px; /* Menyesuaikan ukuran font untuk layar tablet */
+        box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2); /* Sedikit mengurangi bayangan untuk tampilan lebih halus */
+    }
+}

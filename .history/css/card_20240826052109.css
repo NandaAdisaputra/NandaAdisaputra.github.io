@@ -1,0 +1,26 @@
+.mdc-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 24px;
+    margin: 24px auto;
+    max-width: 1250px;
+}
+
+/* Responsif untuk mode Android (max-width: 767px) */
+@media (max-width: 767px) {
+    .mdc-card {
+        padding: 16px;
+        margin: 16px auto;
+        max-width: 95%;
+    }
+}
+
+/* Responsif untuk mode tablet (min-width: 768px) dan (max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .mdc-card {
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 90%;
+    }
+}

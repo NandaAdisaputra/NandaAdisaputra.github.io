@@ -1,0 +1,34 @@
+/* Daftar */
+.mdc-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+/* Item dalam daftar */
+.mdc-list-item {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    margin-right: 8px;
+}
+
+/* Grafik dalam item daftar */
+.mdc-list-item__graphic {
+    font-size: 20px;
+    color: #4CAF50;
+    margin-right: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; /* Horizontal center */
+}
+
+/* Teks dalam item daftar */
+.mdc-list-item__text {
+    font-size: 1rem;
+}

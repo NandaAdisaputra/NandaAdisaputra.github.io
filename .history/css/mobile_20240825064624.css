@@ -1,0 +1,552 @@
+/* Aturan umum untuk perangkat dengan lebar hingga 768px */
+@media (max-width: 768px) {
+    .site-title {
+        font-size: 20px;
+        padding: 8px 0;
+    }
+
+    .wa-barcode {
+        width: 80px;
+    }
+}
+
+/* Aturan khusus untuk perangkat dengan lebar hingga 480px */
+@media (max-width: 480px) {
+    .site-title {
+        font-size: 18px;
+        padding: 6px 0;
+    }
+
+    .header-wrapper {
+        margin-bottom: 15px;
+    }
+
+    .wa-barcode {
+        width: 60px;
+    }
+}
+
+/* Aturan khusus untuk perangkat dengan lebar hingga 320px */
+@media (max-width: 320px) {
+    .site-title {
+        font-size: 16px;
+        padding: 5px 0;
+    }
+
+    .header-wrapper {
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Aturan khusus untuk perangkat dengan lebar hingga 320px */
+@media (max-width: 320px) {
+    .site-title {
+        font-size: 20px;
+        padding: 5px 0;
+    }
+
+    .header-wrapper {
+        margin-bottom: 10px;
+    }
+
+    .wa-barcode {
+        width: 50px;
+    }
+
+    .container {
+        padding: 0 8px;
+    }
+
+    .profile-picture {
+        width: 150px;
+        height: 150px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+
+    .about-text p {
+        font-size: 12px;
+    }
+
+    .personal-info h1,
+    .personal-info h3 {
+        font-size: 14px;
+    }
+
+    .personal-info p {
+        font-size: 10px;
+    }
+}
+
+/* Aturan khusus untuk perangkat dengan lebar hingga 480px */
+@media (max-width: 480px) {
+    .mdc-card {
+        padding: 12px;
+        margin: 5px;
+    }
+
+    .mdc-card__media img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .mdc-data-table__header-cell,
+    .mdc-data-table__cell {
+        padding: 8px;
+    }
+
+    ul {
+        padding-left: 16px;
+    }
+}
+
+/* Aturan umum untuk perangkat dengan lebar hingga 768px */
+@media (max-width: 768px) {
+    .mdc-card {
+        padding: 16px;
+        margin: 10px;
+    }
+
+    .mdc-card__media img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .mdc-data-table__header-cell,
+    .mdc-data-table__cell {
+        padding: 10px;
+    }
+
+    .about-grid {
+        flex-direction: column;
+    }
+
+    .profile-picture {
+        width: 200px;
+        height: 200px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+
+    .personal-info h1,
+    .personal-info h3 {
+        font-size: 16px;
+    }
+
+    .personal-info p {
+        font-size: 12px;
+    }
+}
+
+/* Aturan umum untuk .mdc-button */
+.mdc-button {
+    flex: none;
+    width: 100%;
+    margin: 2px;
+}
+
+/* Aturan khusus untuk perangkat dengan lebar maksimum 600px */
+@media (max-width: 600px) {
+    .mdc-navbar-group {
+        flex-direction: column;
+    }
+}
+
+/* Aturan khusus untuk perangkat dengan lebar maksimum 768px */
+@media (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-picture {
+        width: 60px;
+        height: 60px;
+    }
+
+    .section {
+        margin-bottom: 15px;
+    }
+}
+
+/* Aturan khusus untuk perangkat dengan lebar minimum 601px */
+@media (min-width: 601px) {
+    .mdc-navbar-group {
+        flex-direction: row;
+    }
+}
+
+/* Common styles for all breakpoints */
+body {
+    padding: 4px;
+}
+
+.container {
+    padding: 10px;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+}
+
+.profile-header h1 {
+    font-size: 20px;
+}
+
+.subtitle {
+    font-size: 14px;
+}
+
+.section-header,
+.mdc-navbar {
+    flex-direction: column;
+}
+
+.mdc-navbar-group {
+    margin-bottom: 12px;
+}
+
+.mdc-button {
+    padding: 8px 12px;
+    font-size: 12px;
+}
+
+.profile-content {
+    padding: 0;
+    max-width: 100%;
+}
+
+.section-title {
+    font-size: 20px;
+}
+
+.timeline-item {
+    padding-left: 10px;
+}
+
+.timeline-item:before {
+    width: 12px;
+    height: 12px;
+}
+
+.education-logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.education-item {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.education-details {
+    text-align: left;
+}
+
+/* Media queries */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+        padding: 4px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-header h1 {
+        font-size: 20px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .section-header,
+    .mdc-navbar {
+        flex-direction: column;
+    }
+
+    .mdc-navbar-group {
+        margin-bottom: 12px;
+    }
+
+    .mdc-button {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .profile-content {
+        padding: 0;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .timeline-item {
+        padding-left: 10px;
+    }
+
+    .timeline-item:before {
+        width: 12px;
+        height: 12px;
+    }
+
+    .education-logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .education-item {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile-header h1 {
+        font-size: 26px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .section-header,
+    .mdc-navbar {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .mdc-navbar-group {
+        margin-bottom: 16px;
+    }
+
+    .mdc-button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .profile-content {
+        padding: 10px;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .timeline-item {
+        padding-left: 20px;
+    }
+
+    .timeline-item:before {
+        width: 14px;
+        height: 14px;
+    }
+
+    .education-logo img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .education-item {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+/*urgent */
+/* Base styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Container */
+.container {
+    padding: 20px;
+}
+
+/* Profile Image */
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/* Header */
+header.mdc-elevation--z8 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #6200ea;
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.profile-header {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+}
+
+.site-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Buttons */
+.mdc-button {
+    background-color: #6200ea;
+    color: #fff;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.mdc-button:hover {
+    background-color: #3700b3;
+    transform: scale(1.05);
+}
+
+/* Scroll Icon */
+.scroll-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff9800;
+    color: white;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.scroll-icon:hover {
+    background-color: #926400;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .mdc-button {
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .scroll-icon {
+        width: 48px;
+        height: 48px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .scroll-icon i {
+        font-size: 20px;
+    }
+
+    .profile-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+        padding: 4px;
+    }
+
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .mdc-button {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .scroll-icon {
+        width: 40px;
+        height: 40px;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .scroll-icon i {
+        font-size: 18px;
+    }
+}
+
+/* Header for tablet and mobile */
+@media (min-width: 768px) and (max-width: 1024px) {
+    header.mdc-elevation--z8 {
+        flex-direction: row;
+        padding: 15px;
+    }
+
+    .profile-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    .site-title {
+        font-size: 28px;
+    }
+}

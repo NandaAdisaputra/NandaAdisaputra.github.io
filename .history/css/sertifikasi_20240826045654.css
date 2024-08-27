@@ -1,0 +1,121 @@
+/* Container Umum untuk Sertifikasi */
+.certifications-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.certifications-header {
+    background-color: #ffc107;
+    color: #1c1c1c;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.certifications-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.certifications-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.certification-icon {
+    font-size: 24px;
+    color: #ff9800;
+    margin-right: 15px;
+}
+
+.certification-details {
+    flex-grow: 1;
+    border-left: 2px solid #1c1c1c;
+    padding-left: 10px;
+}
+
+.certification-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #1c1c1c;
+}
+
+.certification-description {
+    color: #666;
+}
+
+.highlighted {
+    color: #ff9800;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Responsif untuk mode Android (max-width: 767px) */
+@media (max-width: 767px) {
+    .certifications-header {
+        font-size: 1.2rem;
+        padding: 10px 15px; 
+    }
+
+    .certifications-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .certification-icon {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .certification-details {
+        border-left: none;
+        padding-left: 0;
+        padding-top: 10px;
+    }
+
+    .certification-title {
+        font-size: 1.1rem; 
+    }
+
+    .certification-description {
+        font-size: 0.9rem; 
+    }
+}
+
+/* Responsif untuk mode tablet (min-width: 768px) dan (max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .certifications-header {
+        font-size: 1.4rem; /* Menyesuaikan ukuran font header */
+        padding: 12px 18px; /* Menyesuaikan padding */
+    }
+
+    .certifications-item {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .certification-icon {
+        font-size: 22px; /* Menyesuaikan ukuran ikon */
+    }
+
+    .certification-title {
+        font-size: 1.15rem; /* Menyesuaikan ukuran font judul */
+    }
+
+    .certification-description {
+        font-size: 1rem; /* Menyesuaikan ukuran font deskripsi */
+    }
+}

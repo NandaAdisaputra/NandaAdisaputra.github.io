@@ -1,0 +1,148 @@
+/* Umum untuk semua elemen */
+.achievement-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+}
+
+.section-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f7c048;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding-left: 30px;
+    border-left: 2px solid #ddd;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    left: -9px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    background-color: #f7c048;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+/* Text styles */
+.date,
+.achievement-title {
+    color: #333;
+}
+
+.date {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.achievement-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #f7c048;
+    margin-bottom: 5px;
+}
+
+.institution {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Media Queries */
+
+/* Tablet and Mobile Landscape */
+@media (max-width: 768px) {
+    .achievement-section {
+        padding: 20px; /* Reduce padding */
+    }
+
+    .section-title {
+        font-size: 20px; /* Slightly smaller font size */
+        margin-bottom: 15px; /* Adjust margin */
+    }
+
+    .timeline {
+        padding-left: 20px; /* Reduce padding */
+    }
+
+    .timeline-item {
+        padding-left: 15px; /* Reduce padding */
+        margin-bottom: 20px; /* Adjust margin */
+    }
+
+    .timeline-item:before {
+        left: -6px; 
+        width: 12px;
+        height: 12px; 
+    }
+
+    .date,
+    .achievement-title,
+    .institution {
+        font-size: 12px; 
+    }
+
+    .achievement-title {
+        font-size: 14px; 
+    }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+    .achievement-section {
+        padding: 15px; 
+    }
+
+    .section-title {
+        font-size: 18px; 
+        margin-bottom: 10px; 
+    }
+
+    .timeline {
+        padding-left: 15px; 
+    }
+
+    .timeline-item {
+        padding-left: 10px;
+        margin-bottom: 15px; 
+    }
+
+    .timeline-item:before {
+        left: -5px; 
+        width: 10px; 
+        height: 10px; 
+    }
+
+    .date,
+    .achievement-title,
+    .institution {
+        font-size: 10px; 
+    }
+
+    .achievement-title {
+        font-size: 12px; 
+    }
+
+    .institution {
+        font-size: 12px; 
+    }
+}

@@ -1,0 +1,109 @@
+.section-title {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 40px;
+    border-left: 3px solid #333;
+    margin-bottom: 20px;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+}
+
+.timeline-item .date, .timeline-item h3, .timeline-item h4 {
+    margin-bottom: 10px;
+}
+
+.timeline-item .date {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.timeline-item h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.timeline-item h4 {
+    font-size: 1.3em;
+    color: #d32f2f;
+}
+
+.course-details {
+    list-style: none;
+    padding-left: 0;
+}
+
+.course-details li {
+    margin-bottom: 10px;
+}
+
+.course-details strong {
+    color: #333;
+}
+
+/* Responsif untuk mode Android (max-width: 767px) */
+@media (max-width: 767px) {
+    .section-title {
+        font-size: 1.2em; /* Mengurangi ukuran font agar lebih sesuai dengan layar kecil */
+        padding: 8px 16px;
+    }
+
+    .timeline {
+        padding-left: 20px; /* Mengurangi padding kiri untuk layar kecil */
+        border-left: 2px solid #333; /* Mengurangi ketebalan garis */
+    }
+
+    .timeline-item .date {
+        font-size: 1em; /* Mengurangi ukuran font */
+    }
+
+    .timeline-item h3 {
+        font-size: 1.2em; /* Mengurangi ukuran font */
+    }
+
+    .timeline-item h4 {
+        font-size: 1.1em; 
+    }
+
+    .course-details li {
+        margin-bottom: 8px;
+    }
+}
+
+/* Responsif untuk mode tablet (min-width: 768px) dan (max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .section-title {
+        font-size: 1.4em; 
+        padding: 9px 18px;
+    }
+
+    .timeline {
+        padding-left: 30px; 
+        border-left: 2.5px solid #333; 
+    }
+
+    .timeline-item .date {
+        font-size: 1.1em; 
+    }
+
+    .timeline-item h3 {
+        font-size: 1.4em; 
+    }
+
+    .timeline-item h4 {
+        font-size: 1.2em; 
+    }
+
+    .course-details li {
+        margin-bottom: 9px; 
+    }
+}
