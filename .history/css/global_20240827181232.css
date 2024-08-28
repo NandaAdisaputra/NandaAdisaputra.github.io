@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 8px;
+    padding: 0;
+    fo
+    color: #333;
+    background-color: #f7c048;
+}
+
+/* Responsif untuk mode Android (max-width: 767px) */
+@media (max-width: 767px) {
+    body {
+        margin: 5px;
+        font-size: 14px;
+    }
+}
+
+/* Responsif untuk mode tablet (min-width: 768px) dan (max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        margin: 6px;
+        font-size: 16px;
+    }
+}
