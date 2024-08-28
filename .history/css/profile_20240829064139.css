@@ -206,6 +206,7 @@
 
 .contact-info strong {
     color: #ff9800;
+    /* Highlight labels */
 }
 
 /* Responsive Design */
@@ -213,11 +214,6 @@
     .profile-header-container {
         flex-direction: column;
         padding: 16px;
-    }
-
-    .contact-info {
-        font-size: 16px;
-        margin-top: 12px;
     }
 
     .profile-sidebar {
@@ -260,12 +256,6 @@
         gap: 20px;
     }
 
-    .contact-info {
-        font-size: 17px;
-        margin-top: 14px;
-    }
-
-
     .profile-sidebar {
         width: 250px;
     }
@@ -299,11 +289,6 @@
         flex-direction: column;
         padding: 12px;
         gap: 12px;
-    }
-
-    .contact-info {
-        font-size: 14px;
-        margin-top: 10px;
     }
 
     .profile-sidebar {
@@ -369,11 +354,6 @@
         flex-direction: column;
         padding: 8px;
         gap: 8px;
-    }
-
-    .contact-info {
-        font-size: 12px;
-        margin-top: 8px;
     }
 
     .profile-sidebar {

@@ -301,11 +301,6 @@
         gap: 12px;
     }
 
-    .contact-info {
-        font-size: 14px;
-        margin-top: 10px;
-    }
-
     .profile-sidebar {
         width: 100%;
         border-right: none;
@@ -369,11 +364,6 @@
         flex-direction: column;
         padding: 8px;
         gap: 8px;
-    }
-
-    .contact-info {
-        font-size: 12px;
-        margin-top: 8px;
     }
 
     .profile-sidebar {

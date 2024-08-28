@@ -370,10 +370,9 @@
         padding: 8px;
         gap: 8px;
     }
-
     .contact-info {
-        font-size: 12px;
-        margin-top: 8px;
+        font-size: 12px; 
+        margin-top: 8px; /* Adjust margin for very small screens */
     }
 
     .profile-sidebar {

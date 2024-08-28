@@ -9,6 +9,7 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     gap: 16px;
     flex-wrap: wrap;
+    /* Allow wrap on smaller screens */
 }
 
 /* Sidebar */
@@ -22,13 +23,9 @@
     border-radius: 12px;
 }
 
-/* About Info Card */
 .about-info-card {
     display: flex;
-    flex-direction: column;
-    /* Stack elements vertically */
-    align-items: center;
-    /* Center-align items horizontally */
+    align-items: flex-start;
     padding: 16px;
     background-color: #ffffff;
     border-radius: 12px;
@@ -36,42 +33,18 @@
     margin-bottom: 16px;
 }
 
-/* Profile Picture */
 .profile-picture {
     width: 250px;
     height: 250px;
     object-fit: cover;
     border-radius: 50%;
-    margin-bottom: 16px;
-    /* Space below the picture */
+    margin-right: 16px;
 }
 
-/* CV Button */
-.cv-container {
-    margin-bottom: 2px;
-    margin-top: 4px;
-}
-
-.cv-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #ff9800;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
-}
-
-.cv-button:hover {
-    background-color: #764700;
-}
-
-/* Personal Info */
 .personal-info {
+    flex: 1;
+    text-align: left;
     font-size: 18px;
-    text-align: center;
 }
 
 .personal-info h1 {
@@ -79,17 +52,17 @@
     font-weight: 700;
     color: #ff9800;
     border-bottom: 2px solid #f7c048;
+    text-decoration: solid;
+    margin-bottom: 8px;
 }
 
 .subtitle {
     font-size: 24px;
-    font-weight: 700;
-    text-align: center;
+    font-weight: 400;
     color: #00bfff;
     margin-bottom: 16px;
 }
 
-/* Social Media */
 .social-media {
     display: flex;
     gap: 16px;
@@ -99,6 +72,7 @@
 .social-icon {
     font-size: 24px;
     color: #ff9800;
+    text-decoration: solid;
     position: relative;
     transition: color 0.3s ease;
 }
@@ -126,7 +100,6 @@
     display: block;
 }
 
-/* WhatsApp Barcode */
 .wa-container {
     text-align: center;
     margin-top: 24px;
@@ -152,7 +125,6 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Menu Container */
 .menu-container {
     display: flex;
     flex-direction: column;
@@ -197,27 +169,29 @@
     color: #824e00;
 }
 
-.contact-info {
-    text-align: left;
-    margin-top: 16px;
-    font-size: 18px;
-    line-height: 1.5;
+.cv-container {
+    margin-top: 10px;
 }
 
-.contact-info strong {
-    color: #ff9800;
+.cv-button {
+    background-color: #6200ea;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 1rem;
 }
 
-/* Responsive Design */
+.cv-button:hover {
+    background-color: #3700b3;
+}
+
+/* Responsif untuk mode mobile */
 @media (max-width: 767px) {
     .profile-header-container {
         flex-direction: column;
         padding: 16px;
-    }
-
-    .contact-info {
-        font-size: 16px;
-        margin-top: 12px;
     }
 
     .profile-sidebar {
@@ -254,17 +228,12 @@
     }
 }
 
+/* Responsif untuk mode tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
     .profile-header-container {
         padding: 20px;
         gap: 20px;
     }
-
-    .contact-info {
-        font-size: 17px;
-        margin-top: 14px;
-    }
-
 
     .profile-sidebar {
         width: 250px;
@@ -283,27 +252,49 @@
         font-size: 15px;
     }
 
-    .cv-container {
-        margin-top: 0;
-        margin-left: auto;
-    }
-
     .cv-button {
-        font-size: 1rem;
-        padding: 10px 20px;
+        padding: 6px 12px;
+        font-size: 0.75rem;
     }
 }
 
+/* Header Styling */
+header.mdc-elevation--z8 {
+    background-color: #ff9800;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* Responsif untuk mode Android (max-width: 767px) */
+@media (max-width: 767px) {
+    header.mdc-elevation--z8 {
+        padding: 15px;
+        font-size: 14px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .cv-button {
+        padding: 8px 16px;
+        font-size: 0.875rem;
+    }
+}
+
+/* Responsif untuk mode tablet (min-width: 768px) dan (max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    header.mdc-elevation--z8 {
+        padding: 18px;
+        font-size: 16px;
+        box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* Responsif untuk mode mobile kecil (max-width: 480px) */
 @media (max-width: 480px) {
     .profile-header-container {
         flex-direction: column;
         padding: 12px;
         gap: 12px;
-    }
-
-    .contact-info {
-        font-size: 14px;
-        margin-top: 10px;
     }
 
     .profile-sidebar {
@@ -318,6 +309,7 @@
         width: 80px;
         height: 80px;
         margin-bottom: 12px;
+        margin-right: 0;
     }
 
     .personal-info h1 {
@@ -359,11 +351,12 @@
     }
 
     .cv-button {
-        font-size: 0.8rem;
-        padding: 8px 16px;
+        padding: 6px 12px;
+        font-size: 0.75rem;
     }
 }
 
+/* Header Container */
 @media (max-width: 376px) {
     .profile-header-container {
         flex-direction: column;
@@ -371,11 +364,7 @@
         gap: 8px;
     }
 
-    .contact-info {
-        font-size: 12px;
-        margin-top: 8px;
-    }
-
+    /* Sidebar */
     .profile-sidebar {
         width: 100%;
         border-right: none;
@@ -384,18 +373,21 @@
         padding: 8px;
     }
 
+    /* About Info Card */
     .about-info-card {
         flex-direction: column;
         padding: 8px;
         margin-bottom: 8px;
     }
 
+    /* Profile Picture */
     .profile-picture {
         width: 60px;
         height: 60px;
         margin-bottom: 8px;
     }
 
+    /* Personal Info */
     .personal-info {
         font-size: 12px;
     }
@@ -410,6 +402,7 @@
         margin-bottom: 8px;
     }
 
+    /* Social Media Icons */
     .social-media {
         gap: 4px;
     }
@@ -418,26 +411,31 @@
         width: 50px;
     }
 
+    /* Profile Content */
     .profile-content {
         padding: 8px;
         box-shadow: none;
     }
 
+    /* Menu Header */
     .menu-header {
         font-size: 16px;
     }
 
+    /* List Items */
     .mdc-list-item__link {
         font-size: 12px;
         padding: 6px 8px;
     }
 
+    /* Header Styling */
     header.mdc-elevation--z8 {
         padding: 8px;
         font-size: 10px;
         box-shadow: none;
     }
 
+    /* Tooltip */
     .tooltip {
         font-size: 8px;
         padding: 3px;
@@ -445,7 +443,7 @@
     }
 
     .cv-button {
-        font-size: 0.75rem;
-        padding: 6px 12px;
+        padding: 5px 10px;
+        font-size: 0.7rem;
     }
 }
