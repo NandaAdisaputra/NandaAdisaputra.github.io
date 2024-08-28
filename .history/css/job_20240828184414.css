@@ -1,0 +1,221 @@
+/* Kartu */
+.mdc-card {
+    margin: 20px auto;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.mdc-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    transform: scale(1.01);
+    background-color: #e0f2f1;
+}
+
+/* Media dalam kartu */
+.mdc-card__media {
+    margin-right: 16px;
+}
+
+.mdc-card__media img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #00796b;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.mdc-card__media img:hover {
+    border-color: #004d40;
+    transform: rotate(5deg);
+}
+
+/* Konten utama dalam kartu */
+.mdc-card__primary {
+    display: flex;
+    align-items: center;
+}
+
+.mdc-card__title {
+    flex-grow: 1;
+    color: #333333;
+    font-weight: 500;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.mdc-card__title:hover {
+    color: #00796b;
+}
+
+.mdc-card__secondary {
+    margin-top: 16px;
+    color: #555555;
+}
+
+/* Judul */
+h5 {
+    color: #00796b;
+    margin-bottom: 12px;
+}
+
+/* Daftar */
+ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Tabel Data */
+.mdc-data-table {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    transition: box-shadow 0.3s ease;
+}
+
+.mdc-data-table__header-cell,
+.mdc-data-table__cell {
+    padding: 12px;
+}
+
+.mdc-data-table__header-cell {
+    background-color: #00796b;
+    color: #ffffff;
+    border-bottom: 2px solid #004d40;
+    transition: background-color 0.3s ease;
+}
+
+.mdc-data-table__header-cell:hover {
+    background-color: #004d40;
+}
+
+.mdc-data-table__cell {
+    border-bottom: 1px solid #ddd;
+    color: #333333;
+}
+
+.mdc-data-table__cell:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsif untuk mode Android (max-width: 767px) */
+@media (max-width: 767px) {
+    .mdc-card {
+        margin: 10px;
+        padding: 15px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .mdc-card__media img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .mdc-card__title {
+        font-size: 1.1em;
+    }
+
+    .mdc-card__secondary {
+        margin-top: 12px;
+    }
+
+    h5 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        padding-left: 15px;
+    }
+
+    .mdc-data-table__header-cell,
+    .mdc-data-table__cell {
+        padding: 10px;
+    }
+}
+
+/* Responsif untuk mode tablet (min-width: 768px) dan (max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .mdc-card {
+        margin: 15px auto;
+        padding: 18px;
+    }
+
+    .mdc-card__media img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .mdc-card__title {
+        font-size: 1.15em;
+    }
+
+    .mdc-card__secondary {
+        margin-top: 14px;
+    }
+
+    h5 {
+        font-size: 1.3em;
+        margin-bottom: 11px;
+    }
+
+    ul {
+        padding-left: 18px;
+    }
+
+    .mdc-data-table__header-cell,
+    .mdc-data-table__cell {
+        padding: 11px;
+    }
+}
+/* Responsif untuk layar sangat kecil (max-width: 375px) */
+@media (max-width: 375px) {
+    .mdc-card {
+        margin: 8px; 
+        padding: 12px; 
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .mdc-card__media {
+        margin-right: 8px; 
+    }
+
+    .mdc-card__media img {
+        width: 50px; 
+        height: 50px; 
+    }
+
+    .mdc-card__title {
+        font-size: 1em; 
+    }
+
+    .mdc-card__secondary {
+        margin-top: 10px; 
+    }
+
+    h5 {
+        font-size: 1.1em; /* Menurunkan ukuran font untuk heading */
+        margin-bottom: 8px; /* Mengurangi margin bawah untuk heading */
+    }
+
+    ul {
+        padding-left: 10px; /* Mengurangi padding kiri untuk list */
+    }
+
+    .mdc-data-table__header-cell,
+    .mdc-data-table__cell {
+        padding: 8px; /* Mengurangi padding untuk sel tabel */
+    }
+}
