@@ -1,0 +1,93 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    color: #424242;
+}
+
+.story-list {
+    width: 80%;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.story-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.story-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.story-date {
+    font-size: 14px;
+    color: #757575;
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+.story-details {
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+.story-details h2 {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    color: #212121;
+}
+
+.story-details p {
+    margin: 0;
+    font-size: 14px;
+    color: #757575;
+}
+
+.story-details a {
+    color: #1E88E5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.story-details a:hover {
+    text-decoration: underline;
+}
+
+.story-stats {
+    display: flex;
+    align-items: center;
+}
+
+.views-reads {
+    display: flex;
+    gap: 20px; 
+}
+
+.views, .reads {
+    font-size: 14px;
+    color: #616161;
+    display: inline-block;
+    padding: 5px 12px; 
+    background-color: #E0E0E0;
+    border-radius: 16px;
+}
+
+.views {
+    background-color: #BBDEFB;
+    color: #1E88E5;
+}
+
+.reads {
+    background-color: #C8E6C9;
+    color: #43A047;
+    margin-left: 5px; /* Memberikan sedikit margin kiri untuk memastikan tidak terlalu mepet */
+}
