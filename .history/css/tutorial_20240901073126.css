@@ -95,49 +95,55 @@ body {
     color: #43A047;
 }
 
-/* Add this to your existing CSS file */
-.youtube-link {
-    text-decoration: none;
+Berikut adalah contoh HTML dan CSS untuk menampilkan playlist YouTube dari channel Javsoul Technology. Ini akan menampilkan iframe yang menampilkan video playlist dari YouTube dan memastikan tampilannya responsif dan menarik. HTML html < !DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Javsoul Technology Playlists</title><link rel="stylesheet" href="styles.css"></head><body><div class="container"><h1>Javsoul Technology Playlists</h1><div class="video-container"><iframe src="https://www.youtube.com/embed/?listType=playlist&list=PL3oW2tjiIxvQZ4nD1w2W-cGkJLP0xMG7V"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+
+allowfullscreen></iframe></div></div></body></html>CSS (styles.css) css body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-.view-playlists-button {
-    background-color: #ff0000;
-    /* YouTube red */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
 }
 
-.view-playlists-button:hover {
-    background-color: #cc0000;
-    /* Darker red for hover effect */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
 }
 
-/* Responsive styling for tablets and mobile devices */
-@media (max-width: 768px) {
-    .view-playlists-button {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin: 0 auto;
 }
 
-@media (max-width: 480px) {
-    .view-playlists-button {
-        font-size: 12px;
-        padding: 6px 12px;
-    }
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
-/* Additional responsive styling for very small devices (e.g., 373px width) */
-@media (max-width: 373px) {
-    .view-playlists-button {
-        font-size: 11px;
-        padding: 5px 10px;
-    }
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  
 }
 
 /* Responsive for very small devices (max-width: 376px) */

@@ -1,0 +1,42 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.content-section {
+    padding: 16px;
+}
+
+.mdc-card {
+    margin-bottom: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.recommendation-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.recommendation-img {
+    width: ;
+    height: 150px;
+    object-fit: cover;
+}
+
+.mdc-card__supporting-text {
+    padding: 16px;
+}
+
+.mdc-button--raised {
+    margin: 16px;
+    border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+    .recommendation-card {
+        margin: 8px;
+    }
+}

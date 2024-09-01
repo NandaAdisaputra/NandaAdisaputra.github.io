@@ -95,49 +95,30 @@ body {
     color: #43A047;
 }
 
-/* Add this to your existing CSS file */
-.youtube-link {
-    text-decoration: none;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px
 }
 
-.view-playlists-button {
-    background-color: #ff0000;
-    /* YouTube red */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin: 0 auto;
 }
 
-.view-playlists-button:hover {
-    background-color: #cc0000;
-    /* Darker red for hover effect */
-}
-
-/* Responsive styling for tablets and mobile devices */
-@media (max-width: 768px) {
-    .view-playlists-button {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
-}
-
-@media (max-width: 480px) {
-    .view-playlists-button {
-        font-size: 12px;
-        padding: 6px 12px;
-    }
-}
-
-/* Additional responsive styling for very small devices (e.g., 373px width) */
-@media (max-width: 373px) {
-    .view-playlists-button {
-        font-size: 11px;
-        padding: 5px 10px;
-    }
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /* Responsive for very small devices (max-width: 376px) */

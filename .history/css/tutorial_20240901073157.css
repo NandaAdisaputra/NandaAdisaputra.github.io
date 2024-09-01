@@ -95,51 +95,6 @@ body {
     color: #43A047;
 }
 
-/* Add this to your existing CSS file */
-.youtube-link {
-    text-decoration: none;
-}
-
-.view-playlists-button {
-    background-color: #ff0000;
-    /* YouTube red */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.view-playlists-button:hover {
-    background-color: #cc0000;
-    /* Darker red for hover effect */
-}
-
-/* Responsive styling for tablets and mobile devices */
-@media (max-width: 768px) {
-    .view-playlists-button {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
-}
-
-@media (max-width: 480px) {
-    .view-playlists-button {
-        font-size: 12px;
-        padding: 6px 12px;
-    }
-}
-
-/* Additional responsive styling for very small devices (e.g., 373px width) */
-@media (max-width: 373px) {
-    .view-playlists-button {
-        font-size: 11px;
-        padding: 5px 10px;
-    }
-}
-
 /* Responsive for very small devices (max-width: 376px) */
 @media (max-width: 376px) {
     .story-item {
