@@ -1,0 +1,170 @@
+.certifications-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 90%;
+    /* Maksimal 90% dari lebar layar */
+    width: 90%;
+    /* Lebar kontainer responsif */
+}
+
+/* Judul sertifikasi */
+.certifications-header {
+    background-color: #ffc107;
+    color: #1c1c1c;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    /* Ukuran font untuk tampilan desktop */
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+/* Daftar sertifikasi */
+.certifications-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Item sertifikasi */
+.certifications-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* Ikon sertifikasi */
+.certification-icon {
+    font-size: 24px;
+    /* Ukuran ikon di perangkat lebih besar */
+    color: #ff9800;
+    margin-right: 15px;
+}
+
+/* Detail sertifikasi */
+.certification-details {
+    flex-grow: 1;
+    border-left: 2px solid #1c1c1c;
+    /* Border kiri pada perangkat lebih besar */
+    padding-left: 10px;
+}
+
+/* Judul dan deskripsi sertifikasi */
+.certification-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    /* Ukuran font untuk judul */
+    color: #1c1c1c;
+}
+
+.certification-description {
+    color: #666;
+}
+
+.highlighted {
+    color: #ff9800;
+    font-weight: bold;
+    font-size: 1rem;
+    /* Ukuran font untuk elemen yang disorot */
+}
+
+/* Responsif untuk mode Android (max-width: 767px) */
+@media (max-width: 767px) {
+    .certifications-container {
+        padding: 15px;
+        /* Mengurangi padding untuk mobile */
+    }
+
+    .certifications-header {
+        font-size: 1.4rem;
+        /* Ukuran font lebih kecil di mobile */
+        padding: 10px 15px;
+        /* Mengurangi padding */
+    }
+
+    .certifications-item {
+        flex-direction: column;
+        /* Mengubah arah flex untuk mobile */
+        align-items: flex-start;
+        /* Rata kiri pada item sertifikasi */
+        margin-bottom: 15px;
+        /* Jarak antar item */
+        padding: 8px 0;
+        /* Padding item */
+    }
+
+    .certification-icon {
+        font-size: 20px;
+        /* Mengurangi ukuran ikon */
+        margin-bottom: 8px;
+        /* Jarak bawah */
+    }
+
+    .certification-details {
+        border-left: none;
+        /* Menghilangkan border pada mobile */
+        padding-left: 0;
+        /* Menghapus padding kiri */
+        padding-top: 8px;
+        /* Ruang di atas untuk detail */
+    }
+
+    .certification-title {
+        font-size: 1rem;
+        /* Ukuran font untuk judul */
+    }
+
+    .certification-description {
+        font-size: 0.9rem;
+        /* Ukuran font untuk deskripsi */
+    }
+
+    .highlighted {
+        font-size: 0.9rem;
+        /* Ukuran font untuk elemen yang disorot */
+    }
+}
+
+/* Responsif untuk mode tablet (min-width: 768px) dan (max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .certifications-container {
+        padding: 20px;
+        /* Mengatur padding untuk tablet */
+    }
+
+    .certifications-header {
+        font-size: 1.4rem;
+        /* Ukuran font untuk tablet */
+        padding: 12px 18px;
+        /* Mengatur padding */
+    }
+
+    .certifications-item {
+        flex-direction: row;
+        /* Mengatur arah flex untuk tablet */
+        align-items: center;
+        /* Rata tengah */
+    }
+
+    .certification-icon {
+        font-size: 22px;
+        /* Ukuran ikon untuk tablet */
+    }
+
+    .certification-title {
+        font-size: 1.15rem;
+        /* Ukuran font untuk judul */
+    }
+
+    .certification-description {
+        font-size: 1rem;
+        /* Ukuran font untuk deskripsi */
+    }
+}

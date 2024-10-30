@@ -1,0 +1,71 @@
+.certifications-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    /* Adjust this to the actual width of the certificate */
+    width: 100%;
+}
+
+.certifications-header {
+    background-color: #ffc107;
+    color: #1c1c1c;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.certifications-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.certifications-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.certification-image {
+    width: 100%;
+    /* Full width */
+    max-width: 768px;
+    /* Limit width to certificate’s original dimensions */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 8px;
+    margin-right: 0;
+    display: block;
+    margin: 0 auto;
+}
+
+.certification-details {
+    display: none;
+    /* Hide details since only the image is displayed */
+}
+
+@media (max-width: 767px) {
+    .certifications-container {
+        padding: 15px;
+    }
+
+    .certifications-header {
+        font-size: 1.4rem;
+        padding: 10px 15px;
+    }
+
+    .certification-image {
+        width: 100%;
+        /* Adjust to fit smaller screens */
+        max-width: 100%;
+    }
+}

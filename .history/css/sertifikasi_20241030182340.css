@@ -1,0 +1,116 @@
+/* Container Umum untuk Sertifikasi */
+.certifications-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Judul Sertifikasi */
+.certifications-header {
+    background-color: #ffc107;
+    color: #1c1c1c;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+/* List Sertifikasi */
+.certifications-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.certifications-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* Gambar Sertifikat */
+.certification-image {
+    width: 100%;
+    /* Full width untuk responsif */
+    max-width: 100%;
+    /* Maksimalkan lebar sesuai container */
+    height: auto;
+    /* Jaga proporsi */
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+/* Detail Sertifikasi */
+.certification-details {
+    text-align: center;
+}
+
+.certification-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #1c1c1c;
+}
+
+.certification-description {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Responsif untuk Perangkat Kecil (max-width: 480px) */
+@media (max-width: 480px) {
+    .certifications-header {
+        font-size: 1.2rem;
+        padding: 10px 15px;
+        margin-bottom: 15px;
+    }
+
+    .certification-title {
+        font-size: 1rem;
+    }
+
+    .certification-description {
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsif untuk Perangkat Menengah (max-width: 767px) */
+@media (max-width: 767px) {
+    .certifications-header {
+        font-size: 1.3rem;
+        padding: 10px 15px;
+    }
+
+    .certification-title {
+        font-size: 1.1rem;
+    }
+
+    .certification-description {
+        font-size: 0.95rem;
+    }
+}
+
+/* Responsif untuk Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .certifications-header {
+        font-size: 1.4rem;
+        padding: 12px 18px;
+    }
+
+    .certification-title {
+        font-size: 1.15rem;
+    }
+
+    .certification-description {
+        font-size: 1rem;
+    }
+}

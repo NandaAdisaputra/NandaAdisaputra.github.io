@@ -1,0 +1,149 @@
+.section-title {
+    background-color: #ffcc00; /* Warna latar belakang judul bagian */
+    color: #333; /* Warna teks */
+    padding: 10px 20px; /* Padding dalam judul */
+    font-size: 1.5em; /* Ukuran font judul */
+    margin-bottom: 20px; /* Margin bawah */
+    display: inline-block; /* Menampilkan sebagai blok inline */
+}
+
+.timeline {
+    position: relative; /* Posisi relatif untuk elemen timeline */
+    padding-left: 40px; /* Padding kiri untuk timeline */
+    border-left: 3px solid #333; /* Garis batas kiri */
+    margin-bottom: 20px; /* Margin bawah */
+}
+
+.timeline-item {
+    margin-bottom: 20px; /* Margin bawah untuk item timeline */
+}
+
+.timeline-item .date,
+.timeline-item h3,
+.timeline-item h4 {
+    margin-bottom: 10px; /* Margin bawah untuk elemen dalam item timeline */
+}
+
+.timeline-item .date {
+    font-size: 1.2em; /* Ukuran font untuk tanggal */
+    color: #555; /* Warna teks untuk tanggal */
+}
+
+.timeline-item h3 {
+    font-size: 1.5em; /* Ukuran font untuk judul 3 */
+    color: #333; /* Warna teks untuk judul 3 */
+}
+
+.timeline-item h4 {
+    font-size: 24px; /* Ukuran font untuk judul 4 */
+    color: #d32f2f; /* Warna teks untuk judul 4 */
+}
+
+.course-details {
+    list-style: none; /* Menghilangkan gaya daftar */
+    padding-left: 0; /* Menghilangkan padding kiri */
+    font-size: 18px; /* Ukuran font untuk detail kursus */
+}
+
+.course-details li {
+    margin-bottom: 10px; /* Margin bawah untuk item detail kursus */
+}
+
+.course-details strong {
+    color: #333; /* Warna teks tebal dalam detail kursus */
+}
+
+/* Responsif untuk mode Android (max-width: 767px) */
+@media (max-width: 767px) {
+    .section-title {
+        font-size: 1.2em; /* Ukuran font untuk judul bagian di Android */
+        padding: 8px 16px; /* Padding untuk judul bagian */
+    }
+
+    .timeline {
+        padding-left: 20px; /* Padding kiri untuk timeline */
+        border-left: 2px solid #333; /* Garis batas kiri */
+    }
+
+    .timeline-item .date {
+        font-size: 1em; /* Ukuran font untuk tanggal */
+    }
+
+    .timeline-item h3 {
+        font-size: 1.2em; /* Ukuran font untuk judul 3 */
+    }
+
+    .timeline-item h4 {
+        font-size: 1.1em; /* Ukuran font untuk judul 4 */
+    }
+
+    .course-details li {
+        margin-bottom: 8px; /* Margin bawah untuk item detail kursus */
+    }
+}
+
+/* Responsif untuk mode tablet (min-width: 768px) dan (max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .section-title {
+        font-size: 1.4em; /* Ukuran font untuk judul bagian di tablet */
+        padding: 9px 18px; /* Padding untuk judul bagian */
+    }
+
+    .timeline {
+        padding-left: 30px; /* Padding kiri untuk timeline */
+        border-left: 2.5px solid #333; /* Garis batas kiri */
+    }
+
+    .timeline-item .date {
+        font-size: 1.1em; /* Ukuran font untuk tanggal */
+    }
+
+    .timeline-item h3 {
+        font-size: 1.4em; /* Ukuran font untuk judul 3 */
+    }
+
+    .timeline-item h4 {
+        font-size: 1.2em; /* Ukuran font untuk judul 4 */
+    }
+
+    .course-details li {
+        margin-bottom: 9px; /* Margin bawah untuk item detail kursus */
+    }
+}
+
+/* Responsif untuk layar sangat kecil (max-width: 375px) */
+@media (max-width: 375px) {
+    .section-title {
+        font-size: 1.2em; /* Ukuran font untuk judul bagian */
+        padding: 8px 12px; /* Padding untuk judul bagian */
+    }
+
+    .timeline {
+        padding-left: 15px; /* Padding kiri untuk timeline */
+        border-left: 2px solid #333; /* Garis batas kiri */
+    }
+
+    .timeline-item {
+        margin-bottom: 15px; /* Margin bawah untuk item timeline */
+    }
+
+    .timeline-item .date {
+        font-size: 1em; /* Ukuran font untuk tanggal */
+    }
+
+    .timeline-item h3 {
+        font-size: 1.2em; /* Ukuran font untuk judul 3 */
+    }
+
+    .timeline-item h4 {
+        font-size: 1.1em; /* Ukuran font untuk judul 4 */
+    }
+
+    .course-details {
+        font-size: 16px; /* Ukuran font untuk detail kursus */
+    }
+
+    .course-details li {
+        margin-bottom: 8px; /* Margin bawah untuk item detail kursus */
+    }
+}
